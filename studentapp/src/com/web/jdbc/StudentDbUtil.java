@@ -23,8 +23,8 @@ public class StudentDbUtil {
 		
 	List<Student> students = new ArrayList<>();
 		
-	
-	
+		Connection myConn = null;
+		Statement myStmt = null;
 		ResultSet myRs = null;
 		
 		 String url = "jdbc:mysql://localhost:3306/web_student_tracker";
@@ -33,14 +33,13 @@ public class StudentDbUtil {
 
 		try {
 			// get a connection
-		
-			Connection myConn = DriverManager.getConnection(url,"root","s");
+		 myConn = DriverManager.getConnection(url,"root","s");
            	
 			
 			// create sql statement
 			String sql = "select * from student ";
 			
-			Statement myStmt = myConn.createStatement();
+			myStmt = myConn.createStatement();
 			
 			// execute query
 			myRs = myStmt.executeQuery(sql);
