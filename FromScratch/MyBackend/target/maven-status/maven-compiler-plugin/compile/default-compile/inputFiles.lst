@@ -1,0 +1,10 @@
+/root/git/java_exercise/FromScratch/MyBackend/src/main/java/com/mytest/MyBackend/service/UtilityService.java
+/root/git/java_exercise/FromScratch/MyBackend/src/main/java/com/mytest/MyBackend/service/UtilityServiceImpl.java
+/root/git/java_exercise/FromScratch/MyBackend/src/main/java/com/mytest/MyBackend/dto/ResponseKeepAliveDTO.java
+/root/git/java_exercise/FromScratch/MyBackend/src/main/java/com/mytest/MyBackend/dto/RequestKeepAliveDTO.java
+/root/git/java_exercise/FromScratch/MyBackend/src/main/java/com/mytest/MyBackend/dao/mapper/UtilityMapper.java
+/root/git/java_exercise/FromScratch/MyBackend/src/main/java/com/mytest/MyBackend/dto/ConfGenDTO.java
+/root/git/java_exercise/FromScratch/MyBackend/src/main/java/com/mytest/MyBackend/utility/ClassworkCostants.java
+/root/git/java_exercise/FromScratch/MyBackend/src/main/java/com/mytest/MyBackend/dto/RisultatoDTO.java
+/root/git/java_exercise/FromScratch/MyBackend/src/main/java/com/mytest/MyBackend/dao/UtilityDao.java
+/root/git/java_exercise/FromScratch/MyBackend/src/main/java/com/mytest/MyBackend/dao/UtilityDaoImpl.java

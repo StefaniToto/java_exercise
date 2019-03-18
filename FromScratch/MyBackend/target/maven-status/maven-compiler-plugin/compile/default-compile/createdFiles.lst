@@ -1,0 +1,10 @@
+com/mytest/MyBackend/service/UtilityService.class
+com/mytest/MyBackend/service/UtilityServiceImpl.class
+com/mytest/MyBackend/dto/RequestKeepAliveDTO.class
+com/mytest/MyBackend/dao/UtilityDao.class
+com/mytest/MyBackend/dto/ConfGenDTO.class
+com/mytest/MyBackend/dto/RisultatoDTO.class
+com/mytest/MyBackend/dao/UtilityDaoImpl.class
+com/mytest/MyBackend/dto/ResponseKeepAliveDTO.class
+com/mytest/MyBackend/dao/mapper/UtilityMapper.class
+com/mytest/MyBackend/utility/ClassworkCostants.class
