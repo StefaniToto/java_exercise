@@ -20,6 +20,8 @@ import al.alexiasolutions.eshop.eShopBackend.dto.RisultatoDTO;
 import al.alexiasolutions.eshop.eShopBackend.service.ProductService;
 import al.alexiasolutions.eshop.eShopBackend.utility.ClassworkCostants;
 
+
+
 @RestController
 @RequestMapping(value = "/test")
 public class ProductRest {
@@ -27,25 +29,48 @@ public class ProductRest {
 	@Autowired
 	private ProductService service;
 	
-	private static final Logger log = Logger.getLogger(UtilityServiceRest.class.getName());
 	
-	@RequestMapping(value = "/postKeepAlive", method = RequestMethod.POST, consumes = {"application/json"}, produces = {"application/json"})
-	public ResponseEntity<ProductResponseDTO> postKeepAlive(@RequestBody ProductRequestDTO  request){
+	
+	@RequestMapping(value = "/getproduct", method = RequestMethod.POST, consumes = {"application/json"}, produces = {"application/json"})
+	public ResponseEntity<ProductResponseDTO> listproduct(@RequestBody ProductRequestDTO  request){
 		
 		RisultatoDTO result = new RisultatoDTO();
-		ProductResponseDTO response = new ProductResponseDTO();
-		List< ListProductDTO> lista =s ervice.listproduct(request);
 		
-		response.setLista( lista );
+		ProductResponseDTO response = new ProductResponseDTO();
+		
+		List<ListProductDTO> lista = service.listproduct(request);
+		
+		response.setLista(lista);		
 		result.setCodice(ClassworkCostants.ESITO_OK);
-		result.setDescrizione("I am alive - POST");
+		result.setDescrizione("List Pizza - POST");
 		response.setRisultato(result);
+		
+		return new ResponseEntity<ProductResponseDTO>(response, HttpStatus.OK);	
+			}
+	@RequestMapping(value = "/insertproduct", method = RequestMethod.POST, consumes = {"application/json"}, produces = {"application/json"})
+	public ResponseEntity<ProductResponseDTO > insertproduct(@RequestBody ProductRequestDTO  request){
+		
+		RisultatoDTO result = new RisultatoDTO();
+		
+		ProductResponseDTO response = new ProductResponseDTO();;
+		
+		String answer=service.insertproduct(request);
+		response.setOperatoreInserted(answer);
+		result.setCodice(ClassworkCostants.ESITO_OK);
+		result.setDescrizione("List Pizza - POST");
+		response.setRisultato(result);
+		
+	
 		
 		
 		return new ResponseEntity<ProductResponseDTO>(response, HttpStatus.OK);	
 		
 		
 	}
+	
+	
+	
+	
 	
 	
 }

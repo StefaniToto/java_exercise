@@ -21,6 +21,15 @@ public class ProductServiceImpl implements ProductService {
 		return dao.listproduct(request.getN_idproduct());
 		
 	}
+
+	@Override
+	public String insertproduct(ProductRequestDTO request) {
+		
+		return dao.insertproduct(request.getN_idproduct(),request.getT_name(),request.getT_brand(),request.getN_price(),
+				request.getN_quantity());
+				
+				
+	}
 	
 	
 

@@ -1,2 +1,3 @@
-/root/git/java_exercise/eShop/eShopRest/src/main/java/al/alexiasolutions/eshop/service/UtilityServiceRest.java
-/root/git/java_exercise/eShop/eShopRest/src/main/java/al/alexiasolutions/eshop/wadl/WADLController.java
+/root/git/java_exercise/classwork/eShop/eShopRest/src/main/java/al/alexiasolutions/eshop/service/ProductRest.java
+/root/git/java_exercise/classwork/eShop/eShopRest/src/main/java/al/alexiasolutions/eshop/wadl/WADLController.java
+/root/git/java_exercise/classwork/eShop/eShopRest/src/main/java/al/alexiasolutions/eshop/service/UtilityServiceRest.java

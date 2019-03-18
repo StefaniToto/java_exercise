@@ -8,13 +8,14 @@ public class TableResponseDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private List<TableDTO> list;
 	private List<TableDTO> list1;
+	private RisultatoDTO risultato;
 	
 	public TableResponseDTO(List<TableDTO> list, List<TableDTO> list1) {
 		super();
 		this.list = list;
 		this.list1 = list1;
 	}
-	private RisultatoDTO risultato;
+	
 	
 	
 	public TableResponseDTO(List<TableDTO> list, RisultatoDTO risultato) {

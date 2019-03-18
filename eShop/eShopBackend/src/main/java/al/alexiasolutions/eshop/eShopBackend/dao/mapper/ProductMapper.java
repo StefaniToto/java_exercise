@@ -10,4 +10,6 @@ public interface ProductMapper {
 
 	
 	public  List<ListProductDTO> listproduct(Map<String,Object> map );
+	
+	 String insertproduct(Map<String, Object> map); 
 }
