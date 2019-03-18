@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="it.itsvil.classworkbackend.dao.mapper.UtilityMapper">
+
+	<select id="getKeepAlive" resultType="it.itsvil.classworkbackend.dto.ConfGenDTO">
+		Select t_codice,t_valore
+		from "T_Conf_Gen"
+	</select>
+
+</mapper>

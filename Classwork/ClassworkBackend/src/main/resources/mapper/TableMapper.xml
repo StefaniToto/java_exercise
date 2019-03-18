@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="it.itsvil.classworkbackend.dao.mapper.TableMapper">
+
+	<select id="getPizza" resultType="it.itsvil.classworkbackend.dto.TableDTO">
+		SELECT n_idpizza, t_nome, n_prezzo
+         FROM classwork."T_Pizza"
+         WHERE n_prezzo = ${n_prezzo}
+	</select>
+	
+	
+	<select id="selectcondition" resultType="it.itsvil.classworkbackend.dto.TableDTO">
+		SELECT n_idpizza, t_nome, n_prezzo
+         FROM classwork."T_Pizza"
+         WHERE n_prezzo = ${n_prezzo} AND  n_idpizza = ${n_idpizza}
+	</select>
+
+</mapper>
