@@ -1,0 +1,10 @@
+al/alexiasolutions/eshop/eShopBackend/dao/mapper/UtilityMapper.class
+al/alexiasolutions/eshop/eShopBackend/dao/UtilityDao.class
+al/alexiasolutions/eshop/eShopBackend/dto/ConfGenDTO.class
+al/alexiasolutions/eshop/eShopBackend/service/UtilityService.class
+al/alexiasolutions/eshop/eShopBackend/dao/UtilityDaoImpl.class
+al/alexiasolutions/eshop/eShopBackend/dto/RisultatoDTO.class
+al/alexiasolutions/eshop/eShopBackend/dto/RequestKeepAliveDTO.class
+al/alexiasolutions/eshop/eShopBackend/utility/ClassworkCostants.class
+al/alexiasolutions/eshop/eShopBackend/dto/ResponseKeepAliveDTO.class
+al/alexiasolutions/eshop/eShopBackend/service/UtilityServiceImpl.class
