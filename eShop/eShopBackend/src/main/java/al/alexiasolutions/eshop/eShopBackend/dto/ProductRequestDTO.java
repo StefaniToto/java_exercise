@@ -6,7 +6,7 @@ public class ProductRequestDTO implements Serializable {
 
 
 	private static final long serialVersionUID = 1L;
-	
+
 	private int n_idproduct;
 
 	public ProductRequestDTO(int n_idproduct) {
@@ -24,9 +24,11 @@ public class ProductRequestDTO implements Serializable {
 
 	public void setN_idproduct(int n_idproduct) {
 		this.n_idproduct = n_idproduct;
-	}
+	}	
+
 	
 	
 
-	
+
+
 }

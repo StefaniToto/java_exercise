@@ -2,11 +2,26 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="al.alexiasolutions.eshop.eShopBackend.dao.mapper.UtilityMapper">
+<mapper namespace="al.alexiasolutions.eshop.eShopBackend.dao.mapper.ProductMapper">
 
-	<select id="getKeepAlive" resultType="al.alexiasolutions.eshop.eShopBackend.dto.ConfGenDTO">
-		Select t_codice,t_valore
-		from classwork."T_Conf_Gen"
+<select id="listproduct" parameterType="map" resultType="al.alexiasolutions.eshop.eShopBackend.dto.ListProductDTO">
+		
+		SELECT n_idproduct, t_nome, t_brand, n_price, n_quantity
+         FROM classwork."T_Product"
+         WHERE t_nome = #{t_nome}
+        
+
 	</select>
+	
+	
+	<insert id="insertproduct" parameterType="map">
+		
+		INSERT INTO classwork."T_Product"(
+            n_idproduct, t_name, t_brand, n_price, n_quantity)
+             VALUES (#{n_idproduct}, #{t_name}, #{t_brand}, #{n_price}, #{n_quantity});
+
+
+	</insert> 
+	
 
 </mapper>

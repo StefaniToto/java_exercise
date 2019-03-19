@@ -4,12 +4,13 @@
 
 <mapper namespace="al.alexiasolutions.eshop.eShopBackend.dao.mapper.UtilityMapper">
 
-	<select id="listproduct" resultType="al.alexiasolutions.eshop.eShopBackend.dto.ListProductDTO">
-		
-		SELECT n_idproduct, t_nome, t_brand, n_price, n_quantity
-        FROM classwork."T_Product"
-        WHERE n_idproduct = ${n_idproduct};
-
+	
+	
+	
+		<select id="getKeepAlive" resultType="al.alexiasolutions.eshop.eShopBackend.dto.ConfGenDTO">
+		Select t_codice,t_valore
+		from classwork."T_Conf_Gen"
 	</select>
+	
 
 </mapper>

@@ -25,4 +25,19 @@ public class ProductDAOImpl implements ProductDAO{
 		
 	}
 
+	
+	  @Override 
+	  public Integer insertproduct(int n_idproduct, String t_name, String t_brand, double n_price,
+	  int n_quantity) { 
+		  
+		  Map <String ,Object> map=new HashMap<String ,Object>();
+		  map.put("n_idproduct",n_idproduct); 
+		  map.put("t_name",t_name); 
+		  map.put("t_brand",t_brand); 
+		  map.put("n_price",n_price);
+	      map.put("n_quantity",n_quantity);
+	  
+	  
+	      return mapper.insertproduct(map); }
+	 
 }
