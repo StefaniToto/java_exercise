@@ -8,8 +8,12 @@ import al.alexiasolutions.eshop.eShopBackend.dto.ListProductDTO;
 
 public interface ProductMapper {
 
-	
+
 	public  List<ListProductDTO> listproduct(Map<String,Object> map );
+
+	Integer insertproduct(Map<String, Object> map); 
 	
-	 String insertproduct(Map<String, Object> map); 
+	Integer updateproduct(Map<String, Object> map);
+	
+	
 }

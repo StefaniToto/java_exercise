@@ -4,9 +4,7 @@
 
 <mapper namespace="al.alexiasolutions.eshop.eShopBackend.dao.mapper.UtilityMapper">
 
-	
-	
-	
+
 		<select id="getKeepAlive" resultType="al.alexiasolutions.eshop.eShopBackend.dto.ConfGenDTO">
 		Select t_codice,t_valore
 		from classwork."T_Conf_Gen"

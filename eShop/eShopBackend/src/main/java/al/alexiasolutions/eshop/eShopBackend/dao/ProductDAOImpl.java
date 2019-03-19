@@ -18,25 +18,37 @@ public class ProductDAOImpl implements ProductDAO{
 	
 	
 	@Override
-	public List<ListProductDTO> listproduct(int n_idproduct) {
+	public List<ListProductDTO> listproduct(String  t_nome) {
 		Map<String,Object> map = new HashMap <String,Object> ();
-		map.put("n_idproduct",n_idproduct);
+		map.put("t_nome",t_nome);
 		return mapper.listproduct(map);
 		
 	}
 
+	
+	  @Override 
+	  public Integer insertproduct(int n_idproduct, String t_nome, String t_brand, double n_price,
+	  int n_quantity) { 
+		  
+		  Map <String ,Object> map=new HashMap<String ,Object>();
+		  map.put("n_idproduct",n_idproduct); 
+		  map.put("t_nome",t_nome); 
+		  map.put("t_brand",t_brand); 
+		  map.put("n_price",n_price);
+	      map.put("n_quantity",n_quantity);
+	  
+	  
+	      return mapper.insertproduct(map); }
+
 
 	@Override
-	public String insertproduct(int n_idproduct, String t_name, String t_brand, double n_price, int n_quantity) {
-		Map <String ,Object> map=new HashMap<String ,Object>();
-		map.put("n_idproduct",n_idproduct);
-		map.put("t_name",t_name);
-		map.put("t_brand",t_brand);
-		map.put("n_price",n_price);
-		map.put("n_quantity",n_quantity);
+	public Integer updateproduct(String t_nome, String t_brand) {
 		
-		
-		return mapper.insertproduct(map);
+		 
+		  Map <String ,Object> map=new HashMap<String ,Object>();
+		  map.put("t_nome",t_nome); 
+		  map.put("t_brand",t_brand); 
+		  return mapper.updateproduct(map);
 	}
-
+	 
 }

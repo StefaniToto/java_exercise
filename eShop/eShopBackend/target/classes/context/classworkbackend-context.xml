@@ -13,7 +13,7 @@
 		
 	<mvc:annotation-driven/>
 	
-    <context:component-scan base-package="al.alexiasolutions.eshop" />
+    <context:component-scan base-package="al.alexiasolutions.eshop.eShopBackend" />
     
     <import resource="classworkbackend-mybatis-db-context.xml" />
   	    

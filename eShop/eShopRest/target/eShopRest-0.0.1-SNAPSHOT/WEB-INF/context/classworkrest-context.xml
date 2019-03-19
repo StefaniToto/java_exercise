@@ -28,7 +28,7 @@
 
     <mvc:annotation-driven />
 		
-	<context:component-scan base-package="com.mytest" />
+	<context:component-scan base-package="al.alexiasolutions.eshop" />
 	<import resource="classpath:context/classworkbackend-context.xml" />
 	
      <bean id="classworkRestLogger" class="org.apache.log4j.Logger" factory-method="getLogger">

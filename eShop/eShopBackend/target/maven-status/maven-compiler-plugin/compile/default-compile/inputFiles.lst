@@ -1,4 +1,5 @@
 /root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/ResponseKeepAliveDTO.java
+/root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/ProductRequestDTO1.java
 /root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/service/ProductServiceImpl.java
 /root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dao/mapper/UtilityMapper.java
 /root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/service/UtilityService.java
@@ -10,9 +11,11 @@
 /root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/ListProductDTO.java
 /root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dao/UtilityDao.java
 /root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/RisultatoDTO.java
+/root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/ProductRequestDTO2.java
 /root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dao/ProductDAO.java
 /root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dao/UtilityDaoImpl.java
 /root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/RequestKeepAliveDTO.java
 /root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/ProductRequestDTO.java
 /root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/ConfGenDTO.java
+/root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/ProductResponseDTO1.java
 /root/git/java_exercise/classwork/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/service/ProductService.java
