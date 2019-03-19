@@ -13,6 +13,7 @@
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/RequestKeepAliveDTO.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/ProductRequestDTO.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dao/ProductDAOImpl.java
+/root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/ProductRequestDTO2.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/utility/ClassworkCostants.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/ConfGenDTO.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/ListProductDTO.java
