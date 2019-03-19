@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import al.alexiasolutions.eshop.eShopBackend.dto.ListProductDTO;
 import al.alexiasolutions.eshop.eShopBackend.dto.ProductRequestDTO;
 import al.alexiasolutions.eshop.eShopBackend.dto.ProductRequestDTO1;
+import al.alexiasolutions.eshop.eShopBackend.dto.ProductRequestDTO2;
 
 @Service
 public interface ProductService {
@@ -15,6 +16,6 @@ public interface ProductService {
 
 	Integer insertproduct(ProductRequestDTO1 reuqest); 
 
-
+	Integer updateproduct(ProductRequestDTO2 request);
 
 }

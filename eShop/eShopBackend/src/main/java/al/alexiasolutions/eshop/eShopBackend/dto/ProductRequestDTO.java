@@ -7,24 +7,24 @@ public class ProductRequestDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private int n_idproduct;
+	private String t_nome;
 
-	public ProductRequestDTO(int n_idproduct) {
+	public ProductRequestDTO(String t_nome) {
 		super();
-		this.n_idproduct = n_idproduct;
+		this.t_nome = t_nome;
 	}
 
 	public ProductRequestDTO() {
 		super();
 	}
 
-	public int getN_idproduct() {
-		return n_idproduct;
+	public String getT_nome() {
+		return t_nome;
 	}
 
-	public void setN_idproduct(int n_idproduct) {
-		this.n_idproduct = n_idproduct;
-	}	
+	public void setT_nome(String t_nome) {
+		this.t_nome = t_nome;
+	}
 
 	
 	

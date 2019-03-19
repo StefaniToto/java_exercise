@@ -2,26 +2,50 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="al.alexiasolutions.eshop.eShopBackend.dao.mapper.ProductMapper">
+<mapper
+	namespace="al.alexiasolutions.eshop.eShopBackend.dao.mapper.ProductMapper">
 
-<select id="listproduct" parameterType="map" resultType="al.alexiasolutions.eshop.eShopBackend.dto.ListProductDTO">
-		
+	<select id="listproduct" parameterType="map"
+		resultType="al.alexiasolutions.eshop.eShopBackend.dto.ListProductDTO">
+
 		SELECT n_idproduct, t_nome, t_brand, n_price, n_quantity
-         FROM classwork."T_Product"
-         WHERE t_nome = #{t_nome}
-        
+		FROM classwork."T_Product"
+		WHERE t_nome = #{t_nome}
+		ORDER by t_nome
+
 
 	</select>
-	
-	
+
 	<insert id="insertproduct" parameterType="map">
-		
-		INSERT INTO classwork."T_Product"(
-            n_idproduct, t_name, t_brand, n_price, n_quantity)
-             VALUES (#{n_idproduct}, #{t_name}, #{t_brand}, #{n_price}, #{n_quantity});
 
+		INSERT INTO
+		classwork."T_Product"(
+		n_idproduct, t_nome, t_brand, n_price,
+		n_quantity)
+		VALUES (#{n_idproduct}, #{t_nome}, #{t_brand}, #{n_price},
+		#{n_quantity});
 
-	</insert> 
+	</insert>
+
+	<update id="updateproduct" parameterType="map">
+
 	
+		DO $$
+		DECLARE
+		Vari integer := max(n_idproduct) FROM classwork."T_Product" ;
+		BEGIN
+		update classwork."T_Product"
+		SET n_idproduct=Vari ,t_nome=#{update}, t_brand=#{brand7}, n_price=#{150},
+		n_quantity=#{30}
+		where n_idproduct=(select max(n_idproduct) FROM classwork."T_Product" where
+		t_nome=#{t_nome} AND t_brand=#{t_brand} );
+
+		END $$;
+
+
+
+	</update>
+
+
 
 </mapper>

@@ -18,6 +18,7 @@ import al.alexiasolutions.eshop.eShopBackend.dto.ProductResponseDTO1;
 import al.alexiasolutions.eshop.eShopBackend.dto.ListProductDTO;
 import al.alexiasolutions.eshop.eShopBackend.dto.ProductRequestDTO;
 import al.alexiasolutions.eshop.eShopBackend.dto.ProductRequestDTO1;
+import al.alexiasolutions.eshop.eShopBackend.dto.ProductRequestDTO2;
 import al.alexiasolutions.eshop.eShopBackend.dto.RequestKeepAliveDTO;
 import al.alexiasolutions.eshop.eShopBackend.dto.ResponseKeepAliveDTO;
 import al.alexiasolutions.eshop.eShopBackend.dto.RisultatoDTO;
@@ -72,6 +73,29 @@ public class ProductRest {
 
 
 	}
+	
+	
+	@RequestMapping(value = "/updateproduct", method = RequestMethod.POST,
+			consumes = {"application/json"}, produces = {"application/json"}) public
+	ResponseEntity<ProductResponseDTO1 > updateproduct(@RequestBody ProductRequestDTO2 request){
+
+		RisultatoDTO result = new RisultatoDTO();
+
+		ProductResponseDTO1 response = new ProductResponseDTO1();
+
+		Integer answer = service.updateproduct(request);
+		response.setStatus(answer);
+		result.setCodice(ClassworkCostants.ESITO_OK);
+		result.setDescrizione("List Pizza - POST");
+
+
+
+		return new ResponseEntity<ProductResponseDTO1>(response, HttpStatus.OK);
+
+
+	}
+	
+	
 
 
 

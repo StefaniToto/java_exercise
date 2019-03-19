@@ -9,6 +9,7 @@ import al.alexiasolutions.eshop.eShopBackend.dao.ProductDAO;
 import al.alexiasolutions.eshop.eShopBackend.dto.ListProductDTO;
 import al.alexiasolutions.eshop.eShopBackend.dto.ProductRequestDTO;
 import al.alexiasolutions.eshop.eShopBackend.dto.ProductRequestDTO1;
+import al.alexiasolutions.eshop.eShopBackend.dto.ProductRequestDTO2;
 
 @Service(value = "ProductServiceImpl")
 public class ProductServiceImpl implements ProductService {
@@ -19,7 +20,7 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public List<ListProductDTO> listproduct(ProductRequestDTO request) {
 		
-		return dao.listproduct(request.getN_idproduct());
+		return dao.listproduct(request.getT_nome());
 		
 	}
 	
@@ -31,6 +32,13 @@ public class ProductServiceImpl implements ProductService {
 	  
 	  
 	  }
+
+	@Override
+	public Integer updateproduct(ProductRequestDTO2 request) {
+		
+		 return  dao.updateproduct(request.getT_nome(),request.getT_brand());
+		
+	}
 	 
 	
 	

@@ -9,11 +9,14 @@ import al.alexiasolutions.eshop.eShopBackend.dto.ListProductDTO;
 @Repository
 public interface ProductDAO {
 
-	List<ListProductDTO> listproduct(int n_idproduct);
+	List<ListProductDTO> listproduct(String t_nome);
 	
 	
-	  Integer insertproduct(int n_idproduct, String t_name,String t_brand, double
+	  Integer insertproduct(int n_idproduct, String t_nome,String t_brand, double
 	  n_price, int n_quantity );
+
+
+	Integer updateproduct(String t_nome, String t_brand);
 	 
 	
 
