@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import al.alexiasolutions.eshop.eShopBackend.dao.ProductDAO;
+import al.alexiasolutions.eshop.eShopBackend.dto.IdListDTO;
 import al.alexiasolutions.eshop.eShopBackend.dto.ListProductDTO;
 import al.alexiasolutions.eshop.eShopBackend.dto.ProductRequestDTO;
 import al.alexiasolutions.eshop.eShopBackend.dto.ProductRequestDTO1;
@@ -38,9 +39,13 @@ public class ProductServiceImpl implements ProductService {
 		
 		 return  dao.updateproduct(request.getT_nome(),request.getT_brand());
 		
-	}
-	 
-	
-	
 
+
+
+}
+
+	@Override
+	public List<IdListDTO> selectupdate(ProductRequestDTO1 request) {
+		return dao.selectupdate(request.getT_nome(), request.getT_brand());
+	}
 }

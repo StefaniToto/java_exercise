@@ -8,15 +8,15 @@ public class ListProductDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private int n_idproduct ;
-	private String t_name;
+	private String t_nome;
 	private String t_brand;
 	private double n_price;
 	private int n_quantity;
 	
-	public ListProductDTO(int n_idproduct, String t_name, String t_brand, double n_price, int n_quantity) {
+	public ListProductDTO(int n_idproduct, String t_nome, String t_brand, double n_price, int n_quantity) {
 		super();
 		this.n_idproduct = n_idproduct;
-		this.t_name = t_name;
+		this.t_nome = t_nome;
 		this.t_brand = t_brand;
 		this.n_price = n_price;
 		this.n_quantity = n_quantity;
@@ -35,11 +35,11 @@ public class ListProductDTO implements Serializable {
 	}
 
 	public String getT_name() {
-		return t_name;
+		return t_nome;
 	}
 
-	public void setT_name(String t_name) {
-		this.t_name = t_name;
+	public void setT_name(String t_nome) {
+		this.t_nome = t_nome;
 	}
 
 	public String getT_brand() {

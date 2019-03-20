@@ -6,6 +6,7 @@ al/alexiasolutions/eshop/eShopBackend/dao/UtilityDaoImpl.class
 al/alexiasolutions/eshop/eShopBackend/dto/RisultatoDTO.class
 al/alexiasolutions/eshop/eShopBackend/dto/RequestKeepAliveDTO.class
 al/alexiasolutions/eshop/eShopBackend/dao/ProductDAO.class
+al/alexiasolutions/eshop/eShopBackend/dto/ListResponseDTO.class
 al/alexiasolutions/eshop/eShopBackend/dto/ProductResponseDTO.class
 al/alexiasolutions/eshop/eShopBackend/dao/ProductDAOImpl.class
 al/alexiasolutions/eshop/eShopBackend/service/UtilityServiceImpl.class
@@ -14,6 +15,7 @@ al/alexiasolutions/eshop/eShopBackend/dto/ProductRequestDTO2.class
 al/alexiasolutions/eshop/eShopBackend/dto/ProductResponseDTO1.class
 al/alexiasolutions/eshop/eShopBackend/service/ProductServiceImpl.class
 al/alexiasolutions/eshop/eShopBackend/service/UtilityService.class
+al/alexiasolutions/eshop/eShopBackend/dto/IdListDTO.class
 al/alexiasolutions/eshop/eShopBackend/service/ProductService.class
 al/alexiasolutions/eshop/eShopBackend/dao/mapper/ProductMapper.class
 al/alexiasolutions/eshop/eShopBackend/dto/ListProductDTO.class

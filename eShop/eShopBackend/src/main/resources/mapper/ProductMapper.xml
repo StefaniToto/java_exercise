@@ -5,15 +5,13 @@
 <mapper
 	namespace="al.alexiasolutions.eshop.eShopBackend.dao.mapper.ProductMapper">
 
+
 	<select id="listproduct" parameterType="map"
 		resultType="al.alexiasolutions.eshop.eShopBackend.dto.ListProductDTO">
-
-		SELECT n_idproduct, t_nome, t_brand, n_price, n_quantity
-		FROM classwork."T_Product"
-		WHERE t_nome = #{t_nome}
-		ORDER by t_nome
-
-
+		SELECT * FROM classwork."T_Product"
+		<where>
+			<if test="t_nome != null"> t_nome = #{t_nome}</if>
+		</where>
 	</select>
 
 	<insert id="insertproduct" parameterType="map">
@@ -27,24 +25,34 @@
 
 	</insert>
 
-	<update id="updateproduct" parameterType="map">
-
+	<select id="selectupdate" parameterType="map"
+		resultType="al.alexiasolutions.eshop.eShopBackend.dto.IdListDTO">
+		SELECT max(n_idproduct) FROM classwork."T_Product" 
+		
+		<where>
+			<if test="t_nome != null and t_nome != ''">AND "t_nome" =#{t_nome}</if>
+			<if test="t_brand != null and t_brand != ''">AND "t_brand"=#{t_brand}</if>
+		</where> 
+	</select>
 	
-		DO $$
-		DECLARE
-		Vari integer := max(n_idproduct) FROM classwork."T_Product" ;
-		BEGIN
-		update classwork."T_Product"
-		SET n_idproduct=Vari ,t_nome=#{update}, t_brand=#{brand7}, n_price=#{150},
-		n_quantity=#{30}
-		where n_idproduct=(select max(n_idproduct) FROM classwork."T_Product" where
-		t_nome=#{t_nome} AND t_brand=#{t_brand} );
+	
+	<update id="updateproduct" parameterType="map">
+	
 
-		END $$;
+		UPDATE t_nome,t_brand, n_price, n_quantity FROM classwork."T_Product"
+		SET t_nome=#{t_nome}, t_brand=#{t_brand},
+		n_price=#{n_price}, n_quantity=#{n_quantity}
+		
+		
+
 
 
 
 	</update>
+
+
+
+
 
 
 

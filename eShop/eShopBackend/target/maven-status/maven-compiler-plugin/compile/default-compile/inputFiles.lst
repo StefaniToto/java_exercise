@@ -2,12 +2,14 @@
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/service/UtilityService.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/RisultatoDTO.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dao/mapper/UtilityMapper.java
+/root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/ListResponseDTO.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/ProductResponseDTO1.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dao/UtilityDaoImpl.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dao/ProductDAO.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/ProductRequestDTO1.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/service/ProductServiceImpl.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dao/UtilityDao.java
+/root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/IdListDTO.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/service/UtilityServiceImpl.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/service/ProductService.java
 /root/git/java_exercise/eShop/eShopBackend/src/main/java/al/alexiasolutions/eshop/eShopBackend/dto/RequestKeepAliveDTO.java

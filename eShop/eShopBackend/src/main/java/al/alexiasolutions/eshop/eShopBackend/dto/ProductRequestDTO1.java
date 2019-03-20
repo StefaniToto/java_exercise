@@ -18,6 +18,14 @@ public class ProductRequestDTO1 implements Serializable {
 		this.n_price = n_price;
 		this.n_quantity = n_quantity;
 	}
+	
+	public ProductRequestDTO1( String t_nome, String t_brand) {
+		super();
+	
+		this.t_nome = t_nome;
+		this.t_brand = t_brand;
+		
+	}
 
 	public ProductRequestDTO1() {
 		super();

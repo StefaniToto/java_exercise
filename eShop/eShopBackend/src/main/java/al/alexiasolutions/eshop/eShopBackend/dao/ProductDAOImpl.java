@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import al.alexiasolutions.eshop.eShopBackend.dao.mapper.ProductMapper;
+import al.alexiasolutions.eshop.eShopBackend.dto.IdListDTO;
 import al.alexiasolutions.eshop.eShopBackend.dto.ListProductDTO;
 
 @Repository(value = "ProductDAOImpl")
@@ -22,6 +23,8 @@ public class ProductDAOImpl implements ProductDAO{
 		Map<String,Object> map = new HashMap <String,Object> ();
 		map.put("t_nome",t_nome);
 		return mapper.listproduct(map);
+		
+		
 		
 	}
 
@@ -49,6 +52,16 @@ public class ProductDAOImpl implements ProductDAO{
 		  map.put("t_nome",t_nome); 
 		  map.put("t_brand",t_brand); 
 		  return mapper.updateproduct(map);
+	}
+
+
+	@Override
+	public List<IdListDTO> selectupdate(String t_nome, String t_brand) {
+		Map<String,Object> map = new HashMap <String,Object> ();
+		 map.put("t_nome",t_nome); 
+		 map.put("t_brand",t_brand);
+		 
+		  return mapper.selectupdate(map);  
 	}
 	 
 }

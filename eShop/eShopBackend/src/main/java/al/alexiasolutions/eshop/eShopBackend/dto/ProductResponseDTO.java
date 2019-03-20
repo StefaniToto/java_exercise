@@ -26,7 +26,7 @@ public class ProductResponseDTO implements Serializable {
 		super();
 	}
 	public ProductResponseDTO(List<ListProductDTO> lista,
-			al.alexiasolutions.eshop.eShopBackend.dto.RisultatoDTO risultato) {
+			RisultatoDTO risultato) {
 		super();
 		this.lista = lista;
 		this.risultato = risultato;
